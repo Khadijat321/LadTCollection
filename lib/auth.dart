@@ -476,9 +476,3 @@ Widget _buildAuthButton(String text, VoidCallback onPressed) {
     ),
   );
 }
-
-void main (){
-  runApp({
-    const MainApp()
-  });
-}
