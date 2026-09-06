@@ -488,13 +488,17 @@ class MyWidget extends StatefulWidget {
 class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child:Text(
-        'Hello, World!',
-        style: GoogleFonts.lato(
-          textStyle: const TextStyle(color: Colors.white, fontSize: 24),
+    return Column(
+      children: [
+        Container(
+          child:Text(
+            'Hello, World!',
+            style: GoogleFonts.poppins(
+              textStyle: const TextStyle(color: Colors.white, fontSize: 24),
+            ),
+          )
         ),
-      )
+      ],
     );
   }
 }
