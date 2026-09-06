@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_app/shopping_cart.dart';
+import'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -475,4 +476,25 @@ Widget _buildAuthButton(String text, VoidCallback onPressed) {
       ),
     ),
   );
+}
+
+class MyWidget extends StatefulWidget {
+  const MyWidget({super.key});
+
+  @override
+  State<MyWidget> createState() => _MyWidgetState();
+}
+
+class _MyWidgetState extends State<MyWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child:Text(
+        'Hello, World!',
+        style: GoogleFonts.lato(
+          textStyle: const TextStyle(color: Colors.white, fontSize: 24),
+        ),
+      )
+    );
+  }
 }
